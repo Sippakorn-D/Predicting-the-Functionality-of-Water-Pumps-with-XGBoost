@@ -1,4 +1,4 @@
-# Tanzania Waterpoint Functionality Prediction Platform
+# Tanzania Waterpoint Functionality Prediction
 ## An End-to-End Data Mining, Machine Learning, and Field Dispatch Journey
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white)
