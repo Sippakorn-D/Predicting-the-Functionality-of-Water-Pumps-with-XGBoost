@@ -123,8 +123,8 @@ The `FeatureEngineer` class executes four primary operations:
 1. **High-Cardinality Entity Normalization**: The `funder` and `installer` columns contained thousands of misspelled, abbreviated, or casing-variant strings. The transformer cleans strings, computes the top 30 most frequent organizations solely from training data, and aggregates low-frequency entities into an `'other'` category.
 2. **Sentinel Missing Indicators**: Generates explicit boolean indicator flags (`age_missing`, `gps_zero`, `pop_zero`, `tsh_pos`) so downstream tree models can distinguish genuine zero measurements from imputed approximations.
 3. **Logarithmic Compression of Skewed Features**: Compresses extreme right-skewness in continuous metrics:
-   $$\text{log}_{\text{pop}} = \log(1 + \text{population})$$
-   $$\text{log}_{\text{tsh}} = \log(1 + \text{amount\_tsh})$$
+   $$\operatorname{log\_pop} = \log(1 + \text{population})$$
+   $$\operatorname{log\_tsh} = \log(1 + \operatorname{amount\_tsh})$$
    *(Reducing `amount_tsh` skewness from 57.8 down to a well-behaved continuous distribution).*
 4. **Institutional Synergy Flag**: Computes `same_funder_installer` ($1$ if funder matches installer, $0$ otherwise) to capture accountability signals where the financing entity directly oversaw installation quality.
 
