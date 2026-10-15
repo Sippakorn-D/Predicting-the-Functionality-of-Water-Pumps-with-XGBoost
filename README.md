@@ -190,10 +190,6 @@ The application provides three focused operational modules:
 * Calculates a prioritized **Needs Attention Priority Score** for every waterpoint, sorting pumps based on urgency so field crews can optimize maintenance routes.
 * Allows one-click export of prioritized triage schedules in standard CSV format.
 
-### 3. Executive Dashboard and Analytics
-* Aggregates inventory metrics: overall functional percentage, preventive maintenance queues, and critical failure counts.
-* Visualizes regional risk distributions, extraction type vulnerability, and payment model correlations.
-
 ---
 
 ## 9. Stage 6: Automated Field Maintenance and PDF Dispatch Reporting
